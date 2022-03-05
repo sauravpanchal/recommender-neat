@@ -6,7 +6,6 @@ import multiprocessing
 import os
 import pickle
 import neat
-# import cart_pole
 import gym
 import numpy as np
 
@@ -22,7 +21,7 @@ def eval_genome(genome, config):
 
     for runs in range(runs_per_net):
         env = gym.make("CartPole-v1")
-
+        
         # sim = cart_pole.CartPole()
         observation = env.reset()
 
